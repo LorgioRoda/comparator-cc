@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+playwright-report/
+playwright/.cache/
+.DS_Store
+*.log
+
+# Playwright snapshot artifacts (baselines are regenerated locally with `npm run compare:baseline`)
+**/*-snapshots/

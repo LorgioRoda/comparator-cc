@@ -1,0 +1,19 @@
+{
+  "name": "comparator-cc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Visual and text diff between two car configurator URLs (Playwright).",
+  "scripts": {
+    "prepare": "npx playwright install --with-deps chromium",
+    "compare:baseline": "npx playwright test src/tests/compare --project=chrome --grep '@compare' --update-snapshots",
+    "compare": "npx playwright test src/tests/compare --project=chrome --grep '@compare'",
+    "compare:full": "node scripts/compare.mjs",
+    "report": "npx playwright show-report",
+    "ui": "npx playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "20.19.19",
+    "typescript": "5.9.3"
+  }
+}
