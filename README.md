@@ -10,7 +10,6 @@ Walks the full flow (Model → Trim → Configuration) against a URL, taking a s
 ## Install
 
 ```bash
-cd /Users/lorgio.roda/Workspace/comparator-cc
 npm install
 npx playwright install --with-deps chromium
 ```
